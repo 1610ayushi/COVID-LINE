@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://biorender.com/img/covid/vaccine.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Where's my Vaccine?</title>
+</head>
+
+<body>
+
+
+
+    <div class="table">
+        <img src="Untitled-1.png" width="1250"></h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"><img src="https://i.giphy.com/media/RBdAN42LL34fyrSvFS/giphy.gif"></th>
+                    <th scope="col">
+                        <h3>How Does the Coronavirus Spread?</h3>
+                        <p align="justify" color="text-white">
+                            The virus spreads mostly through droplets that people send out when they talk, sneeze, or cough. These usually don’t stay in the air for long or go farther than 6 feet. But the coronavirus might also travel through tiny aerosol particles that can linger
+                            for up to 3 hours and travel farther away. This is why wearing a facial covering can be important. It can keep you from giving it to others as well as helping you avoid breathing it in.You might also catch the coronavirus if
+                            you touch something that an infected person has touched and then touch your eyes, nose, or mouth.<br>
+                            <I>* You can lower your chances of getting or spreading the virus by taking these steps:</I>
+                            <br>* Wash your hands well and often. Use hand sanitizer when you’re not near soap and water.
+                            <br>* Try not to touch your face.
+                            <br>* Wear a face mask when you go out.
+                            <br>* Follow your community guidelines for staying home.
+                            <br>* When you do go out in public, leave at least 6 feet of space between you and others.
+                            <br>* Don’t leave your house if you don’t feel well.
+                            <br>* Cover your mouth with your elbow when you cough or sneeze, or use a tissue.
+                            <br>* Clean and disinfect places and things you touch a lot.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <div class="p-3 mb-2 bg-secondary text-white">
+            <h4 align="center">COVID 19-Live Data</h4>
+
+        </div>
+        <table class="table table-success table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Total Cases</th>
+                    <th scope="col">Total Deaths</th>
+                    <th scope="col">date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="data">
+
+                </tr>
+            </tbody>
+        </table>
+        <center><button on click="refreshData()" type="button" class="btn btn-danger" align="center">Refresh Data</button></center>
+    </div>
+    <div class="searchBox">
+        <input type="text" placeholder="Enter your Area Pincode" id="input" />
+        <button>
+        <img
+          src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png"
+          alt="search"/>
+      </button>
+    </div>
+
+    <div class="cards"></div>
+
+    <div class="opening">
+        <h1><b>Find Vaccination Centers near to you</b></h1>
+        <img src="https://graphics.reuters.com/HEALTH-CORONAVIRUS/VACCINE/yzdpxqxnwvx/img/topper.gif">
+    </div>
+    <table class="image">
+        <thead>
+            <tr>
+                <th scope="col">
+
+                    <div class="card" style="width: 18rem;" style="height: 20rem;">
+                        <img src="https://cdn.pixabay.com/photo/2020/05/05/10/21/social-distancing-5132443_960_720.png" class="card-img-top" alt="..." width="100px" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Maintain Social Distancing</h5>
+                            <p class="card-text">To prevent the spread of COVID-19: Maintain a safe distance from others, even if they don’t appear to be sick.</p>
+                            <a href="https://www.mohfw.gov.in/pdf/socialdistancingEnglish.pdf" class="btn btn-primary">Click Here</a>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="card" style="width: 18rem;" style="height: 20rem;">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/952/547/original/woman-wearing-medical-face-mask-vector.jpg" class="card-img-top" alt="..." width="100px" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Wear Mask</h5>
+                            <p class="card-text">To prevent the spread of COVID-19:Wear a mask in public,indoors or when physical distancing is not possible.</p>
+                            <a href="https://www.mohfw.gov.in/pdf/FINAL_14_03_2020_ENg.pdf" class="btn btn-primary">Click Here</a>
+                        </div>
+                    </div>
+
+                </th>
+                <th scope="col">
+                    <div class="card" style="width: 18rem;" style="height: 20rem;">
+                        <img src="https://image.freepik.com/free-vector/new-normal-lifestyle-concept-coronavirus-cartoon-character-super-hero-attack-covid-19_83111-1358.jpg" class="card-img-top" alt="..." width="100px" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Get Vaccinated</h5>
+                            <p class="card-text">To prevent the spread of COVID-19:Get vaccinated when it’s your turn. Follow local guidance about vaccination.</p>
+                            <a href="https://www.mohfw.gov.in/pdf/ProtectivemeasuresEng.pdf" class="btn btn-primary">Click Here</a>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.freepik.com/free-vector/cartoon-cute-coronavirus-covid-19-doctor-safe-world_39961-1859.jpg" class="card-img-top" alt="..." width="100px" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title"> </h5>
+                            <p class="card-text">To prevent the spread of COVID-19:Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze..</p>
+                            <a href="https://www.mohfw.gov.in/pdf/Poster_Corona_ad_Eng.pdf" class="btn btn-primary">Click Here</a>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+    </table><br>
+    <footer class="page-footer font-small blue">
+
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href=" https://mycvcreator.com/site/AyushiTiwari"> Ayushi Tiwari</a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    init()
+
+
+    function init() {
+        var url = " https://api.covid19api.com/summary"
+
+        var data = ''
+
+        $.get(url, function(data) {
+            console.log(data.Global)
+            data = `
+          <td>${data.Global.TotalConfirmed}</td>
+          <td>${data.Global.TotalDeaths}</td>
+          <td>${data.Global.Date}</td>
+          `
+            $("#data").html(data)
+
+
+        })
+    }
+
+    function refreshData() {
+        clearData()
+        init()
+    }
+
+    function clearData() {
+        $("#data").empty()
+        init()
+    }
+</script>
+
+</html>
