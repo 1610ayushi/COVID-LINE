@@ -10,3 +10,6 @@ This site also provides live data information of Total deaths and number of case
 Numbers of government posters are also shown on the website for awareness among people. For example using masks, Washing hands, and using sanitizers. 
 This site will bring awareness among people so that they take care of themselves and society.
 
+Languages used are:-HTML,CSS JavaScript 
+The site is deployed on Microsoft Azure using Static web Apps and Azure Functions
+
